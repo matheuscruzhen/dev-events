@@ -1,5 +1,5 @@
 const Page = () => {
-  return <div>Next.js Crash Course</div>;
+  return <h1>Next.js Crash Course</h1>;
 };
 
 export default Page;
