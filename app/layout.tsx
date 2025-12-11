@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Schibsted_Grotesk, Martian_Mono } from 'next/font/google';
 import './globals.css';
 import LightRays from '@/components/LightRays';
+import Navbar from '@/components/Navbar';
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: '--font-schibsted-grotesk',
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${schibstedGrotesk.variable} ${martianMono.variable} min-h-screen antialiased`}>
+        <Navbar />
         <div className='top-0 z-[-1] absolute inset-0'>
           <LightRays
             raysOrigin='top-center-offset'
